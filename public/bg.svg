@@ -1,0 +1,20 @@
+<svg width="1440" height="1256" viewBox="0 0 1440 1256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_109_121)">
+<ellipse cx="529.795" cy="300.505" rx="529.795" ry="300.505" transform="matrix(-0.955528 0.2949 -0.288875 -0.957367 1394.47 759.472)" fill="#C0F497"/>
+</g>
+<g filter="url(#filter1_f_109_121)">
+<path d="M1395.65 593.217C1497.98 567.021 1558.34 515.158 1607.18 411.445C1706.13 201.342 916.56 286.576 1062.71 470.221C1154.87 586.012 1264.94 626.677 1395.65 593.217Z" fill="#2DDB81"/>
+</g>
+<defs>
+<filter id="filter0_f_109_121" x="-12.2816" y="0.573547" width="1627.41" height="1254.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_109_121"/>
+</filter>
+<filter id="filter1_f_109_121" x="844.606" y="88.3804" width="971.186" height="716.153" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_109_121"/>
+</filter>
+</defs>
+</svg>
