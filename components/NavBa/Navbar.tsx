@@ -45,7 +45,7 @@ export default function Navbar() {
             <div className="w-3/4 border-b py-4 "></div>
             <UButton
               handleClick={() => window.open("/Waitlist", "_self")}
-              text="Join Our Whitelist"
+              text="Join Our Waitlist"
               className="bg-[#C0F497] hover:underline
               transition-all duration-300 w-[160px]
               text-black font-bold"
@@ -102,7 +102,7 @@ export default function Navbar() {
         /> */}
         <UButton
           handleClick={() => window.open("/Waitlist", "_self")}
-          text="Join Our Whitelist"
+          text="Join Our Waitlist"
           className="bg-[#C0F497] hover:underline
               transition-all duration-300 w-[160px]
               text-black font-bold"

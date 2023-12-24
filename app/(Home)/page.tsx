@@ -82,6 +82,7 @@ export default function Home() {
             Effortless Transactions at Your Fingertips
           </h2>
           <UButton
+            handleClick={() => window.open("/Waitlist", "_self")}
             text="Get Started"
             className="w-[55%] border-none
         bg-emerald-700 text-white hover:bg-emerald-600 
