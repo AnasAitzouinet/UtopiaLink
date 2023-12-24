@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 interface Props {
   type?: "submit" | "reset" | "button";
   text: string;
-  handleClick?: () => void;
+  handleClick?: (e : any) => void;
   className?: string;
   style?: React.CSSProperties;
   ref?: React.RefObject<HTMLButtonElement>;

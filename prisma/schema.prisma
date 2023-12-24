@@ -8,6 +8,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
+
+model Waitlist {
+  id        String @id @default(cuid())
+  email     String @unique
+  createdAt DateTime @default(now())
+}
+
 model UserSubscription {
   id                     String    @id @default(cuid())
   userId                 String    @unique

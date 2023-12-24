@@ -3,6 +3,7 @@ import React from "react";
 import UButton from "../Costume Inputs/Button";
 import Link from "next/link";
 import { Menu, SeparatorHorizontal } from "lucide-react";
+import { motion } from "framer-motion";
 
 import {
   Sheet,
@@ -15,13 +16,18 @@ import {
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Features", href: "/" },
-  { name: "FAQ", href: "/" },
-  { name: "Support", href: "/" },
+  { name: "Features", href: "#features" },
+  { name: "FAQ", href: "#faqs" },
+  // { name: "Support", href: "/" },
 ];
 export default function Navbar() {
   return (
-    <nav className="text-[#FFFFFF] z-50 backdrop-blur-xl bg-transparent fixed top-0 flex w-full h-[10%] border-b border-gray-300/40">
+    <motion.nav
+      initial={{ height: "0%", opacity: 0 }}
+      animate={{ height: "10%", opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="text-[#FFFFFF] z-50 backdrop-blur-xl bg-transparent fixed top-0 flex w-full h-[10%] border-b border-gray-300/40"
+    >
       <div className="w-full py-5 px-6 flex items-center justify-between md:hidden">
         <img src="/Utopia.svg" alt="test" className="object-cover h-14 " />
 
@@ -37,8 +43,14 @@ export default function Navbar() {
             ))}
 
             <div className="w-3/4 border-b py-4 "></div>
-
             <UButton
+              handleClick={() => window.open("/Waitlist", "_self")}
+              text="Join Our Whitelist"
+              className="bg-[#C0F497] hover:underline
+              transition-all duration-300 w-[160px]
+              text-black font-bold"
+            />
+            {/* <UButton
               text="Sign up"
               className="hover:bg-[#C0F497] mt-5 hover:underline
               transition-all duration-700
@@ -49,14 +61,16 @@ export default function Navbar() {
               className="bg-[#C0F497] hover:underline
               transition-all duration-300 
               text-black font-bold"
-            />
+            /> */}
           </SheetContent>
         </Sheet>
       </div>
       <div className="hidden md:flex w-full gap-20 items-center px-2">
         <div className="w-[10%] h-full flex mx-5 text-center items-center cursor-pointer justify-center">
           {/* <img src="/Utopia.svg" alt="test" className="object-cover h-14 " /> */}
-          <h1 className="text-4xl uppercase text-center font-bold cursor-pointer">Utopia</h1>
+          <h1 className="text-4xl uppercase text-center font-bold cursor-pointer">
+            Utopia
+          </h1>
         </div>
         <ul className="flex w-full  md:gap-2 h-full py-2 ">
           {navLinks.map((link, index) => (
@@ -87,12 +101,13 @@ export default function Navbar() {
           hover:text-black hover:font-bold"
         /> */}
         <UButton
+          handleClick={() => window.open("/Waitlist", "_self")}
           text="Join Our Whitelist"
           className="bg-[#C0F497] hover:underline
               transition-all duration-300 w-[160px]
               text-black font-bold"
         />
       </div>
-    </nav>
+    </motion.nav>
   );
 }
